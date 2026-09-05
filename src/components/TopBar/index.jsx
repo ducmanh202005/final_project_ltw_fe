@@ -56,10 +56,6 @@ function TopBar ({advance,setAdvance,log,setLog}) {
             <input type="checkbox" checked={advance} onChange={(e)=>setAdvance(!advance)}/>Advance
           </div>
           <Typography variant="h5">{text}</Typography>
-          <Button variant="contained" component="label">
-            UpLoad
-            <input type="file" hidden onChange={()=>{handleUpLoad}}/>
-          </Button>
           <Button variant="contained" onClick={handleLogOut}>Log Out</Button>
           </>
           ):(
